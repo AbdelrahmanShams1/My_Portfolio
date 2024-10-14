@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all 500ms ease;
+
+ 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+button{
+    font-size: revert;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* TRANSITION */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* header */
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 23px;
+    padding-top: 3rem;
+    background-color: #eeeeee5e;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  
+
+ ul{
+    display: flex ;
+}
+
+ a {
+  color: black;
+  position: relative;
+}
+
+ a::before, 
+#contact a::before {
+  position: absolute;
+  content: "";
+  bottom: -7px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(100, 100, 100);
+  transition: all 500ms ease;
+}
+
+.logo a:hover{
+    color: black;
+}
+
+ li:hover a, 
+#contact a:hover {
+  color: rgb(100, 100, 100);
+}
+
+ li:hover a::before, 
+#contact a:hover::before {
+  width: 100%;
+}
+
+
+/* قائمة الايقونة */
+ .list_icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.hero{
+    margin-bottom: 2rem;
+}
+
+.hero .profile_img{
+    height: 400px;
+    width: 400px;
+    margin: 0px 0 130px 0;
+    overflow: hidden;
+}
+
+.hero .profile_img img{
+    width: 100%;
+}
+
+ .icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+ .title {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hero .section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.hero .section__text p {
+    font-weight: 600;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.btn_1 {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1, .btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+#about{
+    position: relative;
+    margin-bottom: 11rem;
+}
+
+#about .title{
+    margin-bottom: 50px;
+}
+
+#about .about_me{
+    width: 71%;
+    margin: 20px auto;
+    text-align: start;
+    padding: 1.5rem;
+  
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    
+}
+
+
+
+.details-container {
+    padding: 10px;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
+
+#skills,#projects {
+    position: relative;
+    margin: 0 5%;
+    margin-bottom: 11rem;
+  }
+  #skills h3{
+    font-size: 1.17em;
+  }
+  
+  .skills-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .skills-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #projects {
+    position: relative;
+  }
+  
+  .experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+  .color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+  }
+  
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  
+  
+  .experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+  }
+
+  
+  .project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+
+  .btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+  
+@media screen and (max-width: 1400px) {
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+  .about-containers {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
+}
+  
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+  
+  article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+
+
+
+  
+  
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* يمكنك تعديل القيمة حسب الرغبة */
+    }
+  }
+  
+  .icon.arrow {
+    animation: bounce 1s infinite; /* يمكنك تعديل المدة حسب الرغبة */
+  }
+
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+#contact p {
+    position: relative;
+  }
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+footer {
+    
+  
+    margin-bottom: 5px;
+}
+
+
+footer .linkes{
+    justify-content: space-around;
+    gap: 0px;
+    width: 50%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer p{
+    background-color: #eeeeee5e;
+    padding: 4px;
+}
+/* تصميم الشاشات الصغيرة */
+@media (max-width: 768px) {
+
+.arrow {
+    display: none;
+}
+
+.header{
+    padding: 10px;
+    padding-top: 1rem;
+}
+
+  .header ul {
+    display: none;
+    flex-direction: column;
+    gap: 30px !important;
+    position: absolute;
+   
+    align-items: start !important;
+    width: 100%;
+    padding: 30px;
+    transition: all 500ms ease;
+    z-index: 4;
+    top: 67px;
+        right: 0px;
+        background-color: #f4f4f4;
+  }
+
+  /* إظهار القائمة عند النقر */
+  .header ul.open {
+    display: flex;
+    animation: slideDown 0.4s ease;
+  }
+
+  .header ul:not(:last-child) {
+    border-bottom: 1px solid #f4f4f46e;
+  }
+
+  /* إظهار أيقونة القائمة */
+  .header .list_icon {
+    display: block;
+  }
+
+ .hero{
+    flex-direction: column;
+    margin-bottom: 20px;
+ }
+
+ .hero .profile_img{
+    margin: 0 auto 2rem;
+ }
+
+ .hero .section__text{
+    order: -1;
+    margin-top: 24px;
+ }
+
+ #about{
+    margin-bottom: 20px;
+ }
+
+ #about .about_me{
+    width: 90%;
+   
+}
+
+#skills{
+    margin-bottom: 20px;
+}
+
+.contact-info-upper-container{
+    flex-direction: column;
+}
+
+footer .linkes{
+    flex-direction: column;
+}
+
+  /* تأثير الحركة عند فتح القائمة */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

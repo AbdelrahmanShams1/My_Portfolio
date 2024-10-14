@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header
+      id="home"
+      class="header position-relative d-flex justify-content-around align-items-center"
+    >
+      <div class="logo fs-2"><a href="#home">Portfolio</a></div>
+      <ul class="linkes align-items-center gap-5 m-0">
+        <li><a class="fs-5" href="#about ">About</a></li>
+        <li><a class="fs-5" href="#skills">Skills</a></li>
+        <li><a class="fs-5" href="#projects">Projects</a></li>
+        <li><a class="fs-5" href="#contact">Contact</a></li>
+      </ul>
+      <div class="list_icon fs-3"><i class="fa-solid fa-list"></i></div>
+    </header>
+
+    <section  id="home" class="hero d-flex justify-content-around align-items-center">
+      <div class="profile_img">
+        <img
+          src="images/WhatsApp_Image_2024-10-08_at_21.05.20_3457df4e-removebg.png"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abdelrahman Shams eldine</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn_1 btn-color-2"
+            onclick="window.open('./images/My-Cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn_1 btn-color-1"
+            onclick="location.href='./#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="images/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/abdelrahman-shams-eldine/', '_blank')"
+          />
+
+          <img
+            src="images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/AbdelrahmanShams1', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="text-center">
+      <p>Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about_me">
+        I'm Abdelrahman Mohamed, a student at Menoufia University, currently
+        pursuing a degree in Computer Science at the Faculty of Electronic Engineering.
+        About a year ago, I began my journey to become a full-stack developer,
+        driven by a strong passion for technology and coding. Throughout the
+        past year, I have focused on enhancing my skills in both front-end and
+        back-end development. I started by mastering HTML, CSS, and Bootstrap to
+        create responsive websites. Eager to broaden my expertise, I then delved
+        into back-end technologies, learning JavaScript, databases, C#, LINQ,
+        and MVC. While balancing my self-study with my university coursework, I
+        am committed to becoming a well-rounded web developer. With each line of
+        code, I am not only building websites but also shaping a promising
+        future in the tech industry.
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1 text-center">Explore</p>
+      <h1 class="title text-center">My Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers" style="flex-direction: column;">
+         
+          <div class="details-container">
+            <h2 class="experience-sub-title">Language Skill</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Arabic</h3>
+                  <p>Mother Tongue.</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>English</h3>
+                  <p>Working Proficiency</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Computer skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Office</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Visual Studio Code</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL Server Management Studio</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git-Hub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Programing languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML / CSS3</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Database SQL Server</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LINQ / C# MVC</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1 text-center">Browse My Recent</p>
+        <h1 class="title text-center">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                  src="./images/project-1.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                  src="./images/project-2.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./images/project-3.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1 text-center">Get in Touch</p>
+      <h1 class="title text-center">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:abodashams0@gmail.com">abodashams0@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/abdelrahman-shams-eldine/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="linkes align-items-center gap-5 ">
+        <li><a class="fs-5" href="#about ">About</a></li>
+        <li><a class="fs-5" href="#skills">Skills</a></li>
+        <li><a class="fs-5" href="#projects">Projects</a></li>
+        <li><a class="fs-5" href="#contact">Contact</a></li>
+      </ul>
+      <p class="text-center">Copyright &#169; 2024 Abdelrahman Shams-Eldine. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
