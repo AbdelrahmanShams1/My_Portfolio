@@ -19,22 +19,36 @@ window.addEventListener('resize', () => {
   }
 });
 
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 30,
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3, // عدد الشرائح المرئية في الشاشات الكبيرة
+    spaceBetween: 70,
     loop: true,
+    centeredSlides: true, // اجعل الشريحة النشطة في المنتصف
     autoplay: {
-      delay: 3000, // التبديل كل 3 ثواني
-      disableOnInteraction: false, // يستمر التبديل حتى بعد التفاعل
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        delay: 1500,
+        disableOnInteraction: false,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '#next-slide', // السهم التالي
+        prevEl: '#prev-slide', // السهم السابق
     },
-  });
+    breakpoints: {
+        900: {
+            slidesPerView: 3, // عرض ثلاث شرائح على الشاشات المتوسطة
+        },
+        768: {
+            slidesPerView: 2, // عرض شريحتين على الشاشات المتوسطة
+        },
+        500: {
+            slidesPerView: 1, // عرض شريحة واحدة على الشاشات الأصغر
+        },
+        100: {
+            slidesPerView: 1, // عرض شريحتين على الشاشات المتوسطة
+        },
+
+        
+    },
+});
+
   
 

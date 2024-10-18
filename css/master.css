@@ -8,12 +8,15 @@
 body {
   font-family: "Poppins", sans-serif;
   transition: all 500ms ease;
-
- 
+  
+    overflow-y: auto; 
 }
+ 
+
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 p {
@@ -205,7 +208,7 @@ a,
 
 
 .details-container {
-    padding: 10px;
+    padding: 15px;
     flex: 1;
     background: white;
     border-radius: 2rem;
@@ -214,7 +217,7 @@ a,
     text-align: center;
   }
 
-#skills,#projects {
+#skills,#projects,#services {
     position: relative;
     margin: 0 5%;
     margin-bottom: 11rem;
@@ -236,10 +239,72 @@ a,
     flex-direction: column;
   }
 
+
   #projects {
     position: relative;
   }
-  
+
+  .swiper-container {
+    width: 100%; /* تأكد من أن العرض 100% */
+    max-width: 100%; /* تأكد من عدم تجاوز العرض */
+    overflow: hidden; /* يمنع التمرير الجانبي */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.9s ease;
+}
+
+.swiper-slide-active {
+    transform: scale(1.1); /* تمييز العنصر النشط */
+}
+
+.swiper-slide {
+    transition: transform 0.3s ease; /* إضافة تأثير انتقال سلس */
+    opacity: 0.5; /* تقليل شفافية الشرائح الغير نشطة */
+}
+
+.swiper-slide-active {
+    transform: scale(1.2); /* زيادة حجم الشريحة النشطة */
+    opacity: 1; /* جعل الشريحة النشطة بالكامل */
+    z-index: 1; /* تأكد من أن الشريحة النشطة فوق الشرائح الأخرى */
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    margin-top: -50px; /* تعديل المسافة حسب الحاجة */
+}
+
+.fa-arrow-right{
+    position: absolute;
+    right: -41px;
+    top: 57%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.fa-arrow-left{
+    position: absolute;
+    left: -41px;
+    top: 57%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .fa-arrow-left,.fa-arrow-right{
+        display: none;
+    }
+}
   .experience-details-container {
     display: flex;
     justify-content: center;
@@ -252,7 +317,7 @@ a,
   }
   
   .project-img {
-    border-radius: 2rem;
+    border-radius: 12px;
     width: 90%;
     height: 90%;
   }
@@ -485,5 +550,9 @@ footer .linkes{
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .about-containers {
+   flex-direction: column; 
   }
 }
